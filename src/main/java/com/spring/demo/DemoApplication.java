@@ -10,7 +10,6 @@ public class DemoApplication {
 	public static void main(String[] args) {
 //		BinarySearchImpl binarySearch = new BinarySearchImpl(new BubbleSortAlgorithm());
 		
-		
 		ApplicationContext applicationContext = SpringApplication.run(DemoApplication.class, args);
 		
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
