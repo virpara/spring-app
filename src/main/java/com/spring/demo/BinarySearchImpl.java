@@ -6,10 +6,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class BinarySearchImpl {
 	
-	// without constructor or setter injection
 	@Autowired
 	private SortAlgorithm sortAlgorithm = null;
-	
+
+	public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
+		this.sortAlgorithm = sortAlgorithm;
+	}
+
 	public int binarySearch(int[] numbers, int searchNum) {
 		
 		int[] sortedNumbers = sortAlgorithm.sort(numbers);
