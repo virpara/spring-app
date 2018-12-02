@@ -16,5 +16,8 @@ public class DemoApplication {
 		
 		int result = binarySearch.binarySearch(new int[] {12, 4, 6}, 3);
 		System.out.println(result);
+		
+		System.exit(0);
+		
 	}
 }
